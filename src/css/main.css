@@ -1,0 +1,107 @@
+body {
+    background-color: #e6e6e6;
+}
+
+.game-view {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+.game-end-modal {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+    opacity: 1;
+    visibility: visible;
+}
+
+.game-end-modal.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.new-game {
+    height: 20px;
+    background-color: grey;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+}
+
+h1.dialog-box {
+    color: #d0782a;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board-cell {
+    background-color: grey;
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.board-cell:hover {
+    background-color: green;
+}
+
+.xSymbol:before,
+.xSymbol:after {
+    position: absolute;
+    width: 6px;
+    height: 50px;
+    background-color: white;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.xSymbol:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.xSymbol:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.oSymbol:after {
+    position: absolute;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: solid 6px white;
+    width: 44px;
+    height: 44px;
+    transform: translate(-50%, -50%);
+}
