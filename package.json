@@ -4,7 +4,7 @@
   "description": "A program that let's 2 players face off in a game of tic-tac-toe.",
   "author": "Clint Newsom <hcnewsom@gmail.com>",
   "scripts": {
-    "test": "echo \Error: no test specified\" && exit 1",
+    "test": "echo'Error: no test specified' && exit 1"
   },
   "main": "main.js",
   "repository": {
@@ -21,10 +21,15 @@
     "reactjs"
   ],
   "dependencies": {
+    "browserify": "8.1.1",
+    "gulp-install": "^0.2.0",
+    "react": "0.12.x",
+    "underscore": "*"
   },
   "devDependencies": {
-    "bower": "1.3.12",
-    "gulp": "3.8.10"
+    "gulp": "3.8.10",
+    "del": "1.1.1",
+    "vinyl-source-stream": "1.0.0"
   },
   "private": true,
   "license": "N/A"
