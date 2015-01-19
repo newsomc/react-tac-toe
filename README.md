@@ -21,7 +21,7 @@ however, if you really want to...
 
 4] Visit the site at 
 
-    http://localhost:3000/src/
+[http://localhost:3000/src/](http://localhost:3000/src/)
 
 5] Should you want to make edits to this project run
 
