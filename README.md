@@ -19,7 +19,9 @@ however, if you really want to...
 
     python -m SimpleHTTPServer 3000
 
-4] Visit the site at http://localhost:3000
+4] Visit the site at 
+
+    http://localhost:3000/src/
 
 5] Should you want to make edits to this project run
 
